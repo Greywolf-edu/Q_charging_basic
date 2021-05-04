@@ -5,7 +5,7 @@ from Node_Method import find_receiver
 from Q_learning_method import init_function, action_function, q_max_function, reward_function
 
 
-class Q_learningv2:
+class Q_learning_basic:
     def __init__(self, init_func=init_function, nb_action=81, action_func=action_function, alpha=0):
         self.action_list = action_func(nb_action=nb_action)
         self.nb_action = nb_action

@@ -5,7 +5,7 @@ from Package import Package
 def uniform_com_func(net):
     for node in net.node:
         if node.id in net.target and random.random() <= node.prob and node.is_active:
-            package = Package()
+            package = Package(package_size=net.package_size)
             node.send(net, package)
             # print(package.path)
     return True

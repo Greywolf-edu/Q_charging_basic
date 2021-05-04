@@ -7,13 +7,15 @@ from Network_Method import uniform_com_func, to_string, count_package_function
 
 
 class Network:
-    def __init__(self, list_node=None, mc_list = None, target=None):
+    def __init__(self, list_node=None, mc_list = None, target=None, package_size=400):
         self.node = list_node
         self.set_neighbor()
         self.set_level()
         self.mc_list = mc_list
         self.target = target
         self.charging_pos = []
+        self.package_size = package_size
+
         self.active = False
         self.package_lost = False
 
